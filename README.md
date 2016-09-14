@@ -4,10 +4,8 @@ Usage:
 
 ## .eslintrc
 
-```json
-{
-  "extends": [
-    "mother"
-  ]
+```js
+module.exports = {
+    "extends": "mother"
 }
 ```
