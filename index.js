@@ -1,11 +1,15 @@
 module.exports = {
-   "extends": [
+   extends: [
       "airbnb"
-   ]
-   "globals": {
-      "window": false,
-      "document": false
+   ],
+   plugins: [
+      "react"
+   ],
+   installedESLint: true,
+   globals: {
+      window: false,
+      document: false
    },
-   "parser": 'babel-eslint',
-   "rules": {}
+   parser: 'babel-eslint',
+   rules: {}
 }
