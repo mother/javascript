@@ -1,15 +1,15 @@
 # eslint-config-mother
 
-Usage:
+## Usage:
 
-## .eslintrc
-
+#### .eslintrc:
 ```js
 module.exports = {
     "extends": "mother"
 }
 ```
 
+#### console:
 ```
 npm i --save-dev eslint-config-mother
 ```
