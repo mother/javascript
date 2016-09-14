@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-mother",
+  "version": "1.0.5",
+  "description": "Mother eslint config from eslint-config-airbnb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mother/eslint-config-mother.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "airbnb"
+  ],
+  "author": "Mother Co.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mother/eslint-config-mother/issues"
+  },
+  "homepage": "https://github.com/mother/eslint-config-mother#readme",
+  "dependencies": {
+    "babel-eslint": "^5.0.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0"
+  }
+}
