@@ -2,14 +2,24 @@
 
 ## Usage:
 
-#### .eslintrc:
+#### Add the extension:
+
 ```js
+// .eslintrc.js
 module.exports = {
-    "extends": "mother"
+   extends: "mother"
 }
+
+// OR
+
+// .eslintrc
+{
+   "extends": "mother"
+}
+
 ```
 
-#### console:
+#### Then install the config:
 ```
 npm i --save-dev eslint-config-mother
 ```
