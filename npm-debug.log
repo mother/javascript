@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Jared/.nvm/versions/node/v6.4.0/bin/node',
+1 verbose cli   '/Users/Jared/.nvm/versions/node/v6.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Jared/Work/Mother/Code/javascript',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Jared/.npm/eslint-config-mother/1.0.8/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/Jared/.npm correctMkdir not in flight; initializing
+10 info lifecycle eslint-config-mother@1.0.8~prepublish: eslint-config-mother@1.0.8
+11 silly lifecycle eslint-config-mother@1.0.8~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/Jared/.npm/eslint-config-mother/1.0.8/package.tgz',
+12 verbose tar pack   '/Users/Jared/Work/Mother/Code/javascript' ]
+13 verbose tarball /Users/Jared/.npm/eslint-config-mother/1.0.8/package.tgz
+14 verbose folder /Users/Jared/Work/Mother/Code/javascript
+15 verbose addLocalTarball adding from inside cache /Users/Jared/.npm/eslint-config-mother/1.0.8/package.tgz
+16 verbose correctMkdir /Users/Jared/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd eslint-config-mother@1.0.8
+18 verbose afterAdd /Users/Jared/.npm/eslint-config-mother/1.0.8/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/Jared/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/Jared/.npm/eslint-config-mother/1.0.8/package/package.json written
+21 silly publish { name: 'eslint-config-mother',
+21 silly publish   version: '1.0.8',
+21 silly publish   description: 'Mother eslint config from eslint-config-airbnb',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mother/javascript.git' },
+21 silly publish   keywords: [ 'eslint', 'config', 'airbnb' ],
+21 silly publish   author: { name: 'Mother Co.' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/mother/javascript/issues' },
+21 silly publish   homepage: 'https://github.com/mother/javascript#readme',
+21 silly publish   dependencies:
+21 silly publish    { 'babel-eslint': '^5.0.0',
+21 silly publish      eslint: '^2.4.0',
+21 silly publish      'eslint-config-airbnb': '^11.0.0' },
+21 silly publish   readme: '# eslint-config-mother\n\nUsage:\n\n## .eslintrc\n\n```json\n{\n  "extends": [\n    "mother"\n  ]\n}\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '0884f820d2db386f0b1a4c726b183ab0ddab1236',
+21 silly publish   _id: 'eslint-config-mother@1.0.8',
+21 silly publish   _shasum: '77499f253b9491f7041399e9792dfe4d9350a7ca',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name eslint-config-mother
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'eslint-config-mother',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'eslint-config-mother',
+26 silly mapToRegistry   name: 'eslint-config-mother',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/eslint-config-mother
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/Jared/.npm/eslint-config-mother/1.0.8/package.tgz
+30 verbose request uri http://registry.npmjs.org/eslint-config-mother
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 3:25:53 PM
+33 verbose request using bearer token for auth
+34 verbose request id fb044601c15fe65d
+35 http request PUT http://registry.npmjs.org/eslint-config-mother
+36 http 403 http://registry.npmjs.org/eslint-config-mother
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 14 Sep 2016 21:25:53 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sea1925-SEA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1473888353.542630,VS0,VE73',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/Jared/.npm/registry.npmjs.org/eslint-config-mother on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.8." : eslint-config-mother
+40 verbose stack     at makeError (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/Jared/.nvm/versions/node/v6.4.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid eslint-config-mother
+43 verbose cwd /Users/Jared/Work/Mother/Code/javascript
+44 error Darwin 15.6.0
+45 error argv "/Users/Jared/.nvm/versions/node/v6.4.0/bin/node" "/Users/Jared/.nvm/versions/node/v6.4.0/bin/npm" "publish"
+46 error node v6.4.0
+47 error npm  v3.10.3
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.8." : eslint-config-mother
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
