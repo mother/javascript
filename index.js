@@ -11,5 +11,24 @@ module.exports = {
       document: false
    },
    parser: 'babel-eslint',
-   rules: {}
+   rules: {
+      "no-octal-escape": 0,
+      "consistent-return": 0,
+      "indent": ["error", 3],
+      "semi": ["error", "never"],
+      "comma-dangle": ["error", "never"],
+      "no-underscore-dangle": 0,
+      "no-console"         : 2,
+      "no-param-reassign": ["error", { "props": false }],
+      "no-unused-vars": ["error", { "args": "none" }],
+      "func-names": ["error", "never"],
+      "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+      "react/jsx-indent": [1, 3],
+      "react/jsx-indent-props": [1, 3],
+      "react/jsx-closing-bracket-location": [1, {
+         "nonEmpty": "after-props",
+         "selfClosing": "tag-aligned"
+      }],
+      "react/prefer-stateless-function": [0, { "ignorePureComponents": true }]
+   }
 }
