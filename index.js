@@ -25,6 +25,7 @@ module.exports = {
       "func-names": ["error", "never"],
       "class-methods-use-this": 0,
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
+      "no-use-before-define": ["error", { "functions": false }],
       "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
       "react/forbid-prop-types": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
