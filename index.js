@@ -21,6 +21,7 @@ module.exports = {
       "no-console": 2,
       "no-param-reassign": ["error", { "props": false }],
       "no-unused-vars": ["error", { "args": "none" }],
+      "no-use-before-define": ["error", { "functions": false }],
       "func-names": ["error", "never"],
       "class-methods-use-this": 0,
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
