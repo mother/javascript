@@ -25,6 +25,7 @@ module.exports = {
       "class-methods-use-this": 0,
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+      "react/forbid-prop-types": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
       "react/jsx-indent": [1, 3],
       "react/jsx-indent-props": [1, 3],
