@@ -27,6 +27,7 @@ module.exports = {
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-use-before-define": ["error", { "functions": false }],
       "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+      "jsx-a11y/no-static-element-interactions": 0,
       "react/forbid-prop-types": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
       "react/jsx-indent": [1, 3],
