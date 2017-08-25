@@ -5,7 +5,6 @@ module.exports = {
    plugins: [
       "react"
    ],
-   installedESLint: true,
    globals: {
       window: false,
       document: false
