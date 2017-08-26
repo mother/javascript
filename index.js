@@ -13,7 +13,8 @@ module.exports = {
    rules: {
       "no-octal-escape": 0,
       "consistent-return": 0,
-      "indent": ["error", 3, {"SwitchCase": 1}],
+      // TODO: Decide on MemberExpression
+      "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
       "semi": ["error", "never"],
       "comma-dangle": ["error", "never"],
       "no-underscore-dangle": 0,
