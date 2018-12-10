@@ -11,8 +11,7 @@ module.exports = {
    },
    parser: 'babel-eslint',
    rules: {
-      "no-octal-escape": 0,
-      "consistent-return": 0,
+      "consistent-return": 1,
       // TODO: Decide on MemberExpression
       "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
       "semi": ["error", "never"],
@@ -27,8 +26,7 @@ module.exports = {
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-use-before-define": ["error", { "functions": false }],
       "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
-      "jsx-a11y/no-static-element-interactions": 0,
-      "react/forbid-prop-types": 0,
+      "react/forbid-prop-types": 1,
       "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
       "react/jsx-indent": [1, 3],
       "react/jsx-indent-props": [1, 3],
@@ -36,6 +34,15 @@ module.exports = {
          "nonEmpty": "after-props",
          "selfClosing": "tag-aligned"
       }],
+      // NOTE: With React 16.3 lifecycle changes, this is no longer applicable
+      // "React ensures that any setState calls that happen during componentDidMount and
+      // componentDidUpdate are flushed before the user sees the updated UI. In general,
+      // it is better to avoid cascading updates like this, but in some cases they are
+      // necessary"
+      // See: https://github.com/yannickcr/eslint-plugin-react/issues/1754
+      "react/no-did-update-set-state": 0,
+      // NOTE: This is a bug
+      // See: https://github.com/yannickcr/eslint-plugin-react/issues/1773
       "react/prefer-stateless-function": [0, { "ignorePureComponents": true }]
    }
 }
