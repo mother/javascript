@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-mother",
-  "version": "2.0.11",
-  "description": "Mother eslint config from eslint-config-airbnb",
+  "version": "2.0.12",
+  "description": "Mother eslint config derived from eslint-config-airbnb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +12,7 @@
   },
   "keywords": [
     "eslint",
-    "config",
-    "airbnb"
+    "config"
   ],
   "author": "Mother Co.",
   "license": "MIT",

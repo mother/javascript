@@ -9,7 +9,7 @@ module.exports = {
       window: false,
       document: false
    },
-   parser: 'babel-eslint',
+   parser: "babel-eslint",
    rules: {
       "consistent-return": 1,
       // TODO: Decide on MemberExpression
