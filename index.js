@@ -10,22 +10,27 @@ module.exports = {
       document: false
    },
    parser: "babel-eslint",
+   parserOptions: {
+      ecmaFeatures: { "legacyDecorators": true }
+   },
    rules: {
-      "consistent-return": 1,
-      // TODO: Decide on MemberExpression
-      "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
-      "semi": ["error", "never"],
+      "class-methods-use-this": 0,
       "comma-dangle": ["error", "never"],
-      "no-underscore-dangle": 0,
+      // TODO: Change the following to error in the near future
+      "consistent-return": 1,
+      "func-names": ["error", "never"],
+      // TODO: Decide on MemberExpression for the following
+      "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
+      "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
       "no-console": 2,
+      "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-param-reassign": ["error", { "props": false }],
+      "no-underscore-dangle": 0,
       "no-unused-vars": ["error", { "args": "none" }],
       "no-use-before-define": ["error", { "functions": false }],
-      "func-names": ["error", "never"],
-      "class-methods-use-this": 0,
-      "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-use-before-define": ["error", { "functions": false }],
-      "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+      "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+      "react/destructuring-assignment": 0,
       "react/forbid-prop-types": 1,
       "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
       "react/jsx-indent": [1, 3],
@@ -43,6 +48,7 @@ module.exports = {
       "react/no-did-update-set-state": 0,
       // NOTE: This is a bug
       // See: https://github.com/yannickcr/eslint-plugin-react/issues/1773
-      "react/prefer-stateless-function": [0, { "ignorePureComponents": true }]
+      "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+      "semi": ["error", "never"]
    }
 }

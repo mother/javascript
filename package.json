@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mother",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Mother eslint config derived from eslint-config-airbnb",
   "main": "index.js",
   "scripts": {
