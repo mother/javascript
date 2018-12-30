@@ -21,6 +21,7 @@ module.exports = {
       "func-names": ["error", "never"],
       // TODO: Decide on MemberExpression for the following
       "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
+      "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
       "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
       "no-console": 2,
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
