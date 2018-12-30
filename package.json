@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-mother",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "Mother eslint config derived from eslint-config-airbnb",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "7.11.1"
   }
 }
