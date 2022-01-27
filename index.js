@@ -27,7 +27,7 @@ module.exports = {
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-param-reassign": ["error", { "props": false }],
       "no-underscore-dangle": 0,
-      "no-unused-vars": ["error", { "args": "none" }],
+      "no-unused-vars": ["error", { "args": "all" }],
       "no-use-before-define": ["error", { "functions": false }],
       "no-use-before-define": ["error", { "functions": false }],
       "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
