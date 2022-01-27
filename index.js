@@ -9,7 +9,7 @@ module.exports = {
       window: false,
       document: false
    },
-   parser: "babel-eslint",
+   parser: "@babel/eslint-parser",
    parserOptions: {
       ecmaFeatures: { "legacyDecorators": true }
    },
