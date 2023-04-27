@@ -14,6 +14,7 @@ module.exports = {
       ecmaFeatures: { "legacyDecorators": true }
    },
    rules: {
+      "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
       "class-methods-use-this": 0,
       "comma-dangle": ["error", "never"],
       // TODO: Change the following to error in the near future
@@ -22,12 +23,12 @@ module.exports = {
       // TODO: Decide on MemberExpression for the following
       "indent": ["error", 3, { "SwitchCase": 1, "MemberExpression": "off" }],
       "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-      "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+      "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreUrls": true, "ignoreRegExpLiterals": true }],
       "no-console": 2,
       "no-multiple-empty-lines": ['error', { max: 1, maxEOF: 1 }],
       "no-param-reassign": ["error", { "props": false }],
       "no-underscore-dangle": 0,
-      "no-unused-vars": ["error", { "args": "all" }],
+      "no-unused-vars": ["error", { "args": "none", "caughtErrors": "none" }],
       "no-use-before-define": ["error", { "functions": false }],
       "no-use-before-define": ["error", { "functions": false }],
       "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
